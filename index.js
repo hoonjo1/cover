@@ -71,17 +71,32 @@ const bindEvents = () => {
 
 bindEvents();
 
-const defaultone = document.querySelector(".frist").innerHTML;
-function change() {
+const defaultfrist = document.querySelector(".frist").innerHTML;
+function frist() {
   const img = document.querySelector(".img");
   const frist = document.querySelector(".frist");
   const changeText = () => {
     frist.innerHTML = "난 사실 아무생각이 없어요";
   };
   const backText = () => {
-    frist.innerHTML = defaultone;
+    frist.innerHTML = defaultfrist;
   };
   img.addEventListener("mouseover", changeText);
   img.addEventListener("mouseout", backText);
 }
-change();
+frist();
+
+const defaultsecond = document.querySelector(".second").innerHTML;
+function second() {
+  const img = document.querySelector(".house");
+  const second = document.querySelector(".second");
+  const changeText = () => {
+    second.innerHTML = "격렬하게 아무것도 안하기";
+  };
+  const backText = () => {
+    second.innerHTML = defaultsecond;
+  };
+  img.addEventListener("mouseover", changeText);
+  img.addEventListener("mouseout", backText);
+}
+second();
