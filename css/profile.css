@@ -1,0 +1,46 @@
+.profile-img-box {
+  width: 50%;
+  max-width: 400px;
+  position: relative;
+}
+
+.profile-img-box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.profile-img-box__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.profile-title {
+  font-size: 25px;
+  width: 100%;
+  position: relative;
+  right: 10%;
+}
+
+.profile-info {
+  display: flex;
+}
+
+.item {
+  margin: 10px;
+}
+
+@media (max-width: 1200px) {
+  .profile-title {
+    text-align: center;
+    right: auto;
+  }
+  .profile-info {
+    display: block;
+    text-align: center;
+  }
+}
